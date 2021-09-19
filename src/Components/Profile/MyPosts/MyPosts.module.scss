@@ -1,0 +1,22 @@
+.content__posts{
+	display: flex;
+	flex-direction: column;
+}
+.new__post{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 40px 0px;
+
+	& textarea{
+		padding-top: 40px;
+		margin-bottom: 30px;
+		
+	}
+
+	& button{
+		
+		min-height: 30px;
+		max-width: 100px;
+	}
+}

@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DialogItem from './Components/Dialogs/DialogItem/DialogItem';
+import Message from './Components/Dialogs/Message/Message';
+import Post from './Components/Profile/MyPosts/Post/Post';
+import state from './redux/state'
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<App state={state}/>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

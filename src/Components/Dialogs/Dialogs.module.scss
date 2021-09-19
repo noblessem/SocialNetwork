@@ -1,0 +1,32 @@
+.dialogs{
+	display: grid;
+
+	grid-template-columns: 2fr 10fr;
+	padding: 20px;
+	
+	& .dialogs__items{
+		
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		height: 100%;
+		width:1px;
+		background-color:rgb(79, 212, 79);
+		right: 0;
+		top: 0;
+	}
+		
+	}
+
+	
+
+}
+.messages {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+
+	
+}
