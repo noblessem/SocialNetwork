@@ -1,12 +1,15 @@
 .dialogs{
 	display: grid;
-
+	grid-template:
+	[start] "dialogs messages" [row2]
+	[row2] "dialogs text" 50px [row-end]/150px 1fr;
 	grid-template-columns: 2fr 10fr;
 	padding: 20px;
 	
 	& .dialogs__items{
 		
 	position: relative;
+	grid-area: dialogs;
 
 	&::before{
 		content: '';
@@ -27,6 +30,19 @@
 	display: flex;
 	flex-direction: column;
 	padding-left: 30px;
+	grid-area:messages;
 
 	
+}
+
+.send__message{
+	grid-area:text;
+	& textarea{
+		width:100%;
+
+	}
+
+	& button{
+		margin: 0 auto;
+	}
 }

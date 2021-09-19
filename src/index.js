@@ -7,13 +7,19 @@ import DialogItem from './Components/Dialogs/DialogItem/DialogItem';
 import Message from './Components/Dialogs/Message/Message';
 import Post from './Components/Profile/MyPosts/Post/Post';
 import state from './redux/state'
+import { BrowserRouter } from 'react-router-dom';
 
 
 
 ReactDOM.render(
+
 	<React.StrictMode>
-		<App state={state}/>
-	</React.StrictMode>,
+		<BrowserRouter>
+			<App state={state} />
+		</BrowserRouter>
+	</React.StrictMode>
+
+	,
 	document.getElementById('root')
 );
 
